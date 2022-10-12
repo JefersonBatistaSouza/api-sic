@@ -16,7 +16,7 @@ class Categoria_AnimalController extends Controller
     function cadastraCategoria(Request $request)
     {
         $this->validate($request, [
-            'categoriaNome' => 'required|unique:Categoria_Animal',
+            'categoriaNome' => 'required|unique:categoria_animal',
             'categoriaPorte' => 'required',
             'categoriaZootecnica' => 'required',
             'categoriaClassificacao' => 'required',

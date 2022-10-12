@@ -15,9 +15,9 @@ class SetorController extends Controller
 
     function cadastraSetor(Request $request){
         $this->validate($request,[
-            'setorNome' => 'required|unique:Setor',
+            'setorNome' => 'required|unique:setor',
             'setorDescricao' => 'required',
-            'setorSigla' => 'required|unique:Setor',
+            'setorSigla' => 'required|unique:setor',
             'setorAtivo' => 'required'
         ]);
 

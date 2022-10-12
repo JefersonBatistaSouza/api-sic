@@ -17,7 +17,7 @@ class FornecedorController extends Controller
     {
         $this->validate($request, [
             'fornecedorNome' => 'required',
-            'fornecedorCnpjCPF' => 'required|numeric|unique:Fornecedor',
+            'fornecedorCnpjCPF' => 'required|numeric|unique:fornecedor',
             'fornecedorAtivo' => 'required'
         ]);
 
